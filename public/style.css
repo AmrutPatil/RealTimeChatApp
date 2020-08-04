@@ -1,0 +1,118 @@
+.inbox{
+  display: flex;
+}
+.inbox__messages {
+  width: 67%;
+  display: block;
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+}
+.inbox__people {
+  width: 30%;
+  display: block;
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+  background: #d3d3d380;
+}
+.message_form {
+  border: 1px solid;
+  margin: 5px;
+  padding: 5px;
+}
+.chat_ib{
+  color: #2198de;
+  cursor: pointer;
+}
+input {
+  width: 95%;
+  height: 25px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #14213d;
+  border: 2px solid #8d99ae;
+  border-radius: 10px;
+  outline: none;
+}
+button{
+  height: 40px;
+  padding: 2px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #14213d;
+  border: 2px solid #8d99ae;
+  border-radius: 10px;
+  outline: none;
+}
+.received__message {
+  margin-bottom: 5px;
+}
+.received__message > p {
+  height: 20px;
+  padding: 5px;
+  width: fit-content;
+  font-size: 16px;
+  color: #14213d;
+  border: 2px solid #e9e9e9;
+  border-radius: 8px;
+  outline: none;
+  background: #e9e9e9;
+  margin: 0px;
+}
+.sent__message {
+  margin-bottom: 5px;
+  float: right;
+}
+.sent__message > p {
+  height: 20px;
+  padding: 5px;
+  float: right;
+  width: fit-content;
+  font-size: 16px;
+  color: white;
+  border: 2px solid #2198de;
+  border-radius: 8px;
+  outline: none;
+  background: #2198de;
+  margin: 0px;
+}
+.outgoing__message {
+  display: flow-root;
+}
+.message__info {
+  font-size: small;
+}
+.active{
+  background: #2198de;
+  color: white;
+}
+.notification {
+  border-right: 7px solid #ea0f0f;
+  animation: blink 1s;
+  animation-iteration-count: 3;
+}
+@keyframes blink { 50% { border-color:#fff ; }  }
+
+.dim{
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+  background: rgb(56 50 50 / 96%);
+}
+
+.overlay {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  border: 3px solid;
+  padding: 7px;
+  background: aliceblue;
+}
